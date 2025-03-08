@@ -262,5 +262,7 @@ layers:
 combos:
 - p: [53, 0]
   k: Ctl+`
+  l: [LAYER0]
 - p: [55, 0]
   k: Gui+`
+  l: [LAYER0]
