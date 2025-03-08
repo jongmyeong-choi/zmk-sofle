@@ -49,11 +49,13 @@
         VscodeTerminal {
             bindings = <&kp LC(GRAVE)>;
             key-positions = <53 0>;
+            layers = <0>;
         };
 
         SwitchSameApp {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <55 0>;
+            layers = <0>;
         };
     };
 
