@@ -84,7 +84,7 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans  &kp NUMBER_0  &trans  &kp DOT
             >;
 
-            display-name = "layer1";
+            display-name = "LAYER1";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -94,20 +94,11 @@
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &kp PG_UP     &trans        &trans          &mmv MOVE_DOWN   &trans  &kp LEFT_PARENTHESIS  &kp PLUS   &kp RIGHT_PARENTHESIS  &kp UNDER    &kp PLUS
 &trans     &out OUT_USB  &kp HOME        &kp PG_DN     &kp END       &trans          &mmv MOVE_LEFT   &trans  &kp LBKT              &kp MINUS  &kp RBKT               &kp LBRC     &kp RBRC
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &kp LESS_THAN         &kp EQUAL  &kp GREATER_THAN       &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans                &kp N0     &trans                 &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans                &trans     &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
+            label = "LAYER2";
         };
     };
 };
