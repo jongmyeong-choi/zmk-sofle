@@ -1,5 +1,5 @@
-- [Chinese](README.md)
-- [English](README_EN.md)
+- [English](README.md)
+- [Chinese](README_CN.md)
 
 # Update List
 
@@ -19,5 +19,5 @@ For 3D printed model files or any issues and malfunctions with the keyboard, ple
 # Sofle Keymap
 
 
-<img src="keymap-drawer/sofle.svg" >
+<img src="keymap-drawer/eyelash_sofle.svg" >
 
