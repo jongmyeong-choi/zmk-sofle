@@ -158,9 +158,9 @@ layers:
   - +
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
-  - HOME
+  - {t: 'Alt+$$mdi:arrow-left-bold$$', h: HOME}
   - PG DN
-  - END
+  - {t: 'Alt+$$mdi:arrow-right-bold$$', h: END}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
