@@ -165,7 +165,7 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', h: '{', s: '{'}
-  - {t: '-', s: _}
+  - {t: '-', h: _, s: _}
   - {t: ']', h: '}', s: '}'}
   - '{'
   - '}'
