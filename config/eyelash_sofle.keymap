@@ -89,11 +89,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &trans  &trans                   &trans     &trans                   &trans    &mmv MOVE_UP     &bt BT_PRV       &bt BT_NXT                   &trans                &trans                         &bt BT_CLR  &bootloader
-&trans     &trans  &trans                   &kp PG_UP  &trans                   &trans    &mmv MOVE_DOWN   &mt TILDE GRAVE  &kp LEFT_PARENTHESIS         &kp PLUS              &kp RIGHT_PARENTHESIS          &trans      &trans
-&trans     &trans  &mt HOME LA(LEFT_ARROW)  &kp PG_DN  &mt END LA(RIGHT_ARROW)  &trans    &mmv MOVE_LEFT   &trans           &mt LEFT_BRACE LEFT_BRACKET  &mt UNDERSCORE MINUS  &mt RIGHT_BRACE RIGHT_BRACKET  &trans      &trans
-&trans     &trans  &trans                   &trans     &trans                   &trans    &mmv MOVE_RIGHT  &trans           &kp LESS_THAN                &kp EQUAL             &kp GREATER_THAN               &trans      &trans
-&trans     &trans  &trans                   &trans     &trans                   &trans    &mkp LCLK        &trans           &trans                       &kp RIGHT_SHIFT       &trans                         &trans
+&kp TILDE  &trans  &trans                   &trans     &trans                   &trans    &mmv MOVE_UP     &trans                          &trans                       &trans                &trans                         &bt BT_NXT  &bt BT_CLR
+&trans     &trans  &trans                   &kp PG_UP  &trans                   &trans    &mmv MOVE_DOWN   &mt TILDE GRAVE                 &kp LEFT_PARENTHESIS         &kp PLUS              &kp RIGHT_PARENTHESIS          &trans      &bootloader
+&trans     &trans  &mt HOME LA(LEFT_ARROW)  &kp PG_DN  &mt END LA(RIGHT_ARROW)  &trans    &mmv MOVE_LEFT   &mt DOUBLE_QUOTES SINGLE_QUOTE  &mt LEFT_BRACE LEFT_BRACKET  &mt UNDERSCORE MINUS  &mt RIGHT_BRACE RIGHT_BRACKET  &trans      &trans
+&trans     &trans  &trans                   &trans     &trans                   &trans    &mmv MOVE_RIGHT  &trans                          &kp LESS_THAN                &kp EQUAL             &kp GREATER_THAN               &trans      &trans
+&trans     &trans  &trans                   &trans     &trans                   &trans    &mkp LCLK        &trans                          &trans                       &kp RIGHT_SHIFT       &trans                         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
