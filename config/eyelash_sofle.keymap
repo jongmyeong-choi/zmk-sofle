@@ -55,6 +55,16 @@
             key-positions = <55 0>;
             layers = <0>;
         };
+
+        toggleLayer3 {
+            bindings = <&tog 3>;
+            key-positions = <56 45>;
+        };
+
+        toggleLayer0 {
+            bindings = <&tog 0>;
+            key-positions = <56 32>;
+        };
     };
 
     keymap {
