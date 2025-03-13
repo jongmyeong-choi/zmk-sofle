@@ -266,7 +266,5 @@ combos:
 - p: [55, 0]
   k: Gui+`
   l: [LAYER0]
-- p: [56, 45]
+- p: [56, 60]
   k: {t: '3', h: toggle}
-- p: [56, 32]
-  k: {t: LAYER0, h: toggle}
