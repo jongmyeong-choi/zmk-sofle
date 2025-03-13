@@ -92,9 +92,9 @@
         protect: protect {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(Z) &kp K &kp RET &kp LS(Z) &kp L &kp RET>;
+            bindings = <&kt LEFT_SHIFT &kp Z &kt LEFT_SHIFT &kp K &kp RET &kt LEFT_SHIFT &kp Z &kt LEFT_SHIFT &kp L &kp ENTER>;
             label = "PROTECT";
-            tap-ms = <200>;
+            tap-ms = <100>;
         };
     };
 
