@@ -94,6 +94,7 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_SHIFT &kp K &kp RET &kp LS(Z) &kp L &kp RET>;
             label = "PROTECT";
+            tap-ms = <101>;
         };
     };
 
