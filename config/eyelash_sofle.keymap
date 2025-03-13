@@ -81,7 +81,7 @@
                 <&macro_tap>,
                 <&kp Z>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>;
+                <&kp LEFT_SHIFT &kp Q>;
 
             label = "HELL";
         };
