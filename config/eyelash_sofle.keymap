@@ -75,14 +75,14 @@
         hell: hell {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(Z) &kp Q>;
+            bindings = <&kp LS(Z)>;
             label = "HELL";
         };
 
         protect: protect {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(Z) &kp K &kp RET &kp LS(Z) &kp L &kp RET>;
+            bindings = <&kt LEFT_SHIFT &kp K &kp RET &kp LS(Z) &kp L &kp RET>;
             label = "PROTECT";
         };
     };
