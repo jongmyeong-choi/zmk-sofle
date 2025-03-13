@@ -81,7 +81,9 @@
                 <&macro_tap>,
                 <&kp Z>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp Q>;
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp Q>;
 
             label = "HELL";
             tap-ms = <101>;
