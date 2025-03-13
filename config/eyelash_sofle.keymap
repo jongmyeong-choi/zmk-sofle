@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -76,11 +75,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7  &kp F8                    &kp F9  &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &kp UP           &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp N7  &kp N8                    &kp N9  &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &kp LEFT        &kp DOWN         &kp RIGHT        &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp N4  &kp N5                    &kp N6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp N1  &kp N2                    &kp N3  &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans  &mt RIGHT_SHIFT NUMBER_0  &trans  &kp DOT
+&kp GRAVE   &kp F1  &kp F2    &kp F3    &kp F4     &kp F5    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8                    &kp F9  &kp F10           &trans
+&trans      &trans  &trans    &kp UP    &trans     &trans    &mmv MOVE_DOWN   &trans  &kp N7  &kp N8                    &kp N9  &kp MINUS         &kp EQUAL
+&trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &mmv MOVE_LEFT   &trans  &kp N4  &kp N5                    &kp N6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans  &trans    &trans    &trans     &trans    &mmv MOVE_RIGHT  &trans  &kp N1  &kp N2                    &kp N3  &kp F12           &trans
+&kp C_MUTE  &trans  &trans    &trans    &trans     &trans    &mkp LCLK        &trans  &trans  &mt RIGHT_SHIFT NUMBER_0  &trans  &kp DOT
             >;
 
             display-name = "LAYER1";
@@ -98,6 +97,16 @@
 
             sensor-bindings = <&scroll_encoder>;
             label = "LAYER2";
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans    &trans    &trans     &trans       &trans  &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &kp UP    &trans     &trans       &trans  &trans   &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans       &trans  &trans   &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &trans       &trans  &trans   &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &kp SPACE    &trans  &kp RET  &trans  &kp N0  &trans  &trans
+            >;
         };
     };
 };
