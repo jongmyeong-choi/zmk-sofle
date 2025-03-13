@@ -84,7 +84,7 @@
                 <&kp LEFT_SHIFT &kp Q>;
 
             label = "HELL";
-            tap-ms = <100>;
+            tap-ms = <101>;
         };
 
         protect: protect {
