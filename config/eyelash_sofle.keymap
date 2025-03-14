@@ -104,7 +104,6 @@
             #binding-cells = <0>;
             bindings = <&kp NUMBER_8 &kp HOME &kp ENTER &kp NUMBER_9 &kp ENTER>;
             label = "PROTECT_SELF";
-            tap-ms = <130>;
         };
 
         heal: heal {
