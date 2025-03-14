@@ -179,7 +179,7 @@
 &trans  &trans  &trans         &trans    &trans     &trans       &trans  &trans      &trans       &trans       &trans         &trans  &trans
 &trans  &trans  &kp C_AC_HOME  &kp UP    &trans     &trans       &trans  &trans      &trans       &trans       &protect_self  &trans  &trans
 &trans  &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans       &trans  &stop_left  &stop_right  &curse_left  &curse_right   &trans  &trans
-&trans  &trans  &trans         &trans    &trans     &trans       &trans  &hell       &kp N1       &kp N2       &kp N3         &trans  &trans
+&trans  &trans  &trans         &trans    &trans     &trans       &trans  &hell       &heal        &kp N2       &kp N3         &trans  &trans
 &trans  &trans  &trans         &trans    &tog 3     &kp SPACE    &trans  &kp RET     &tog 3       &kp N0       &trans         &trans
             >;
         };
