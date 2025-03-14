@@ -54,17 +54,17 @@
     };
 
     macros {
-        stopall: stopall {
+        stop_right: stopall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_4 &kp RIGHT_ARROW &kp ENTER>;
             label = "STOPALL";
         };
 
-        curseall: curseall {
+        curse_left: curseall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_5 &kp RIGHT_ARROW &kp ENTER>;
+            bindings = <&kp NUMBER_5 &kp LEFT_ARROW &kp ENTER>;
             label = "CURSEALL";
         };
 
@@ -85,12 +85,50 @@
             tap-ms = <101>;
         };
 
-        protect: protect {
+        stop_left: stop_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_SHIFT &kp Z &kt LEFT_SHIFT &kp K &kp RET &kt LEFT_SHIFT &kp Z &kt LEFT_SHIFT &kp L &kp ENTER>;
-            label = "PROTECT";
-            tap-ms = <100>;
+            bindings = <&kp NUMBER_4 &kp LEFT &kp ENTER>;
+            label = "STOP_LEFT";
+        };
+
+        curse_right: curse_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_5 &kp RIGHT &kp ENTER>;
+            label = "CURSE_RIGHT";
+        };
+
+        protect_self: protect_self {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp Z>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp K &kp HOME &kp ENTER>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp Z>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp L &kp ENTER>;
+
+            label = "PROTECT_SELF";
+            tap-ms = <101>;
+        };
+
+        heal: heal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1 &kp HOME &kp ENTER>;
+            label = "HEAL";
         };
     };
 
@@ -138,11 +176,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans         &trans    &trans     &trans       &trans  &trans    &trans    &trans     &trans    &trans  &trans
-&trans  &trans  &kp C_AC_HOME  &kp UP    &trans     &trans       &trans  &trans    &stopall  &curseall  &protect  &trans  &trans
-&trans  &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans       &trans  &stopall  &kp N4    &kp N5     &kp N6    &trans  &trans
-&trans  &trans  &trans         &trans    &trans     &trans       &trans  &hell     &kp N1    &kp N2     &kp N3    &trans  &trans
-&trans  &trans  &trans         &trans    &tog 3     &kp SPACE    &trans  &kp RET   &tog 3    &kp N0     &trans    &trans
+&trans  &trans  &trans         &trans    &trans     &trans       &trans  &trans      &trans       &trans       &trans         &trans  &trans
+&trans  &trans  &kp C_AC_HOME  &kp UP    &trans     &trans       &trans  &trans      &trans       &trans       &protect_self  &trans  &trans
+&trans  &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans       &trans  &stop_left  &stop_right  &curse_left  &curse_right   &trans  &trans
+&trans  &trans  &trans         &trans    &trans     &trans       &trans  &hell       &kp N1       &kp N2       &kp N3         &trans  &trans
+&trans  &trans  &trans         &trans    &tog 3     &kp SPACE    &trans  &kp RET     &tog 3       &kp N0       &trans         &trans
             >;
         };
     };
