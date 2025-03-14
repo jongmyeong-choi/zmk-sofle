@@ -82,7 +82,7 @@
                 <&kp Q>;
 
             label = "HELL";
-            tap-ms = <101>;
+            tap-ms = <130>;
         };
 
         stop_left: stop_left {
@@ -102,26 +102,9 @@
         protect_self: protect_self {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp Z>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp K &kp HOME &kp ENTER>,
-                <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp Z>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp L &kp ENTER>;
-
+            bindings = <&kp NUMBER_8 &kp HOME &kp ENTER &kp NUMBER_9 &kp ENTER>;
             label = "PROTECT_SELF";
-            tap-ms = <101>;
+            tap-ms = <130>;
         };
 
         heal: heal {
@@ -176,11 +159,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans         &trans    &trans     &trans       &trans  &trans      &trans       &trans       &trans         &trans  &trans
-&trans  &trans  &kp C_AC_HOME  &kp UP    &trans     &trans       &trans  &trans      &trans       &trans       &protect_self  &trans  &trans
-&trans  &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans       &trans  &stop_left  &stop_right  &curse_left  &curse_right   &trans  &trans
-&trans  &trans  &trans         &trans    &trans     &trans       &trans  &hell       &heal        &kp N2       &kp N3         &trans  &trans
-&trans  &trans  &trans         &trans    &tog 3     &kp SPACE    &trans  &kp RET     &tog 3       &kp N0       &trans         &trans
+&trans  &trans  &trans    &trans    &trans     &trans       &trans  &trans   &trans       &trans        &trans         &trans     &trans
+&trans  &trans  &kp HOME  &kp UP    &trans     &trans       &trans  &trans   &curse_left  &curse_right  &protect_self  &trans     &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans       &trans  &trans   &stop_left   &stop_right   &curse_right   &trans     &trans
+&trans  &trans  &trans    &trans    &trans     &trans       &trans  &hell    &heal        &kp N2        &kp N3         &kp COMMA  &trans
+&trans  &trans  &trans    &trans    &tog 3     &kp SPACE    &trans  &kp RET  &tog 3       &kp N0        &trans         &trans
             >;
         };
     };
