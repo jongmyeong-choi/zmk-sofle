@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -193,11 +194,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans    &trans    &trans     &trans       &trans  &trans   &trans       &trans        &trans         &trans     &trans
-&trans  &trans  &kp HOME  &kp UP    &trans     &trans       &trans  &trans   &curse_left  &curse_right  &protect_self  &trans     &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans       &trans  &trans   &stop_left   &stop_right   &curse_right   &trans     &trans
-&trans  &trans  &trans    &trans    &trans     &trans       &trans  &hell    &heal        &mt COMMA N2  &kp N3         &kp COMMA  &trans
-&trans  &trans  &trans    &trans    &tog 3     &kp SPACE    &trans  &kp RET  &tog 3       &kp N0        &trans         &trans
+&trans  &trans  &trans    &trans    &trans     &trans       &trans          &trans   &trans       &trans        &trans         &trans     &trans
+&trans  &trans  &kp HOME  &kp UP    &trans     &trans       &trans          &trans   &curse_left  &curse_right  &protect_self  &trans     &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans       &bt BT_PRV      &trans   &stop_left   &stop_right   &curse_right   &trans     &trans
+&trans  &trans  &trans    &trans    &trans     &trans       &bt BT_NXT      &hell    &heal        &mt COMMA N2  &kp N3         &kp COMMA  &trans
+&trans  &trans  &trans    &trans    &tog 3     &kp SPACE    &bt BT_CLR_ALL  &kp RET  &tog 3       &kp N0        &trans         &trans
             >;
         };
     };
