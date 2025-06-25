@@ -151,7 +151,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '`', h: '~', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - (
   - +
   - )
@@ -164,11 +164,11 @@ layers:
   - {t: 'Alt+$$mdi:arrow-right-bold$$', h: END}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '''', h: '"', s: '"'}
-  - {t: '[', h: '{', s: '{'}
+  - '{'
+  - {t: '[', s: '{'}
   - {t: '-', h: _, s: _}
-  - {t: ']', h: '}', s: '}'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ']', s: '}'}
+  - '}'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
